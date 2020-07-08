@@ -1,0 +1,46 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "Project Description",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "webpack": "webpack --env.API_URL="
+  },
+  "author": "Fangjia Li",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
+    "config": "^3.2.4",
+    "cookie-parser": "^1.4.4",
+    "css-loader": "^3.6.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "install": "^0.12.2",
+    "moment": "^2.27.0",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.14.1",
+    "npm": "^6.14.6",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-hot-loader": "^4.12.21",
+    "sass-loader": "^7.3.1",
+    "svg-url-loader": "^2.3.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "body-parser": "latest",
+    "express": "^4.17.1",
+    "mini-css-extract-plugin": "^0.7.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  }
+}

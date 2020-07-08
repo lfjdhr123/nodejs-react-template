@@ -1,5 +1,6 @@
 # nodejs-react-template
-The template of Node.js (web server) + React.js (web framework)
+The template of Node.js (web server) + React.js (web framework).
+Feel free to use it as a template!
 
 ## Prerequisites
 - Node.js v.10 +
@@ -22,6 +23,8 @@ The template of Node.js (web server) + React.js (web framework)
 ## What the template includes:
 1. Node.js + Express.js for the web application framework
 2. React + Redux + React Router for the front framework
+3. Babel for the Javascript compiler
+4. Webpack for the module bundler
 
 ## How to start:
 

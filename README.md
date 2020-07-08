@@ -28,6 +28,10 @@ Feel free to use it as a template!
 
 ## How to start:
 
+### Install the dependencies
+1. go to project root, run `npm install`
+2. (Optional) run `npm audit fix`
+
 ### Compile the web page
 1. go to project root, run `npm run webpack`
 2. The compiled `index.html`, `main.js`, `main.css` will be generated to the directory `./dist`

@@ -1,6 +1,9 @@
 # nodejs-react-template
 The template of Node.js (web server) + React.js (web framework)
 
+## Prerequisites
+- Node.js v.10 +
+
 ## Project Layout:
     .
     ├── config              // the config file, using node module 'config'

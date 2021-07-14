@@ -1,3 +1,6 @@
+/*
+  CONST for defining the action type
+ */
 export default {
   INCREASE_GLOBAL_COUNTER: "INCREASE_GLOBAL_COUNTER",
   DECREASE_GLOBAL_COUNTER: "DECREASE_GLOBAL_COUNTER"

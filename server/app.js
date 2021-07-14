@@ -14,7 +14,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors());
+
 app.use("/", indexRouter);
+
+// Redirect the page by remaining the uri in the tail
 app.use(function(req, res, next) {
   try {
     res.sendFile(`${appRoot}/dist/index.html`);
@@ -22,6 +25,8 @@ app.use(function(req, res, next) {
     next(err);
   }
 });
+
+// Error handler
 app.use(function(err, req, res, next) {
   console.log(err);
   res.status(404).send("Not Found");

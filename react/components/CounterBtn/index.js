@@ -5,7 +5,7 @@ const CounterBtn = ({ buttonName, clickHandler }) => {
     <button
       className="counter-btn-container"
       onClick={() => {
-        clickHandler(1);
+        clickHandler();
       }}
     >
       {buttonName}

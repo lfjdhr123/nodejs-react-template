@@ -2,11 +2,10 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const config = require("config")
 
 module.exports = async () => {
   return {
-    entry: "./react/js/index.js",
+    entry: "./react/component/index.js",
     output: {
       filename: "main.js",
       path: path.resolve(__dirname, "dist")
@@ -60,16 +59,13 @@ module.exports = async () => {
           filename: "./index.html" //relative to root of the application
         },
         new webpack.HotModuleReplacementPlugin()
-      ),
-      new webpack.DefinePlugin({
-        HOST: JSON.stringify(config.get("HOST"))
-      })
+      )
     ],
     resolve: {
       extensions: ["*", ".js", ".jsx"]
     },
     devServer: {
-      contentBase: "./dist",
+      contentBase: "./assets",
       hot: true
     }
   };

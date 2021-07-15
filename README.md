@@ -8,20 +8,20 @@ Feel free to use it as a template!
 ## Project Layout:
     .
     ├── config              // the config file, using node module 'config'
+    ├── assets             // the assets such as images, files, videos, etc.
     ├── react               
         ├── actions         // redux actions
-        ├── images          // images
-        ├── js              // react components
+        ├── components      // react components
         ├── reducers        // redux reducers
-        └── styles          // style sheets
+        └── index.html      // webpack html plugin template
     ├── server
-        ├── routes          // express routers
+        ├── routes          // express routers, where you write your API's business logic
         └── app.js          // web app entry
     └── webpack.config.js   // webpack configuration
     
     
 ## What the template includes:
-1. Node.js + Express.js for the web application framework
+1. Node.js + Express.js for the web server
 2. React + Redux + React Router for the front framework
 3. Babel for the Javascript compiler
 4. Webpack for the module bundler
